@@ -17,9 +17,9 @@ class _MainScreenState extends State<MainScreen> {
 
   final List<Widget> _screens = const [
     Tab1Screen(),
+    Tab4Screen(),
     Tab2Screen(),
     Tab3Screen(),
-    Tab4Screen(),
   ];
 
   @override
@@ -38,6 +38,11 @@ class _MainScreenState extends State<MainScreen> {
           label: 'Events',
         ),
         NavigationDestination(
+          icon: const Icon(Icons.settings_outlined),
+          selectedIcon: const Icon(Icons.settings, color: AppTheme.primaryColor),
+          label: 'Settings',
+        ),
+        NavigationDestination(
           icon: const Icon(Icons.alarm_on_outlined),
           selectedIcon: const Icon(Icons.alarm_on, color: AppTheme.primaryColor),
           label: 'Countdowns',
@@ -47,12 +52,6 @@ class _MainScreenState extends State<MainScreen> {
           selectedIcon: const Icon(Icons.star, color: AppTheme.primaryColor),
           label: 'Milestones',
         ),
-        NavigationDestination(
-          icon: const Icon(Icons.settings_outlined),
-          selectedIcon: const Icon(Icons.settings, color: AppTheme.primaryColor),
-          label: 'Settings',
-        ),
-
         ],
       ),
     );

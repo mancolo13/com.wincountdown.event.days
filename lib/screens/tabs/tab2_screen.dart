@@ -22,10 +22,10 @@ class _Tab2ScreenState extends State<Tab2Screen> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              _chip('All', 0),
-              _chip('Active', 1),
-              _chip('Hot', 2),
-              _chip('Saved', 3),
+              _chip('Anniversary', 0),
+              _chip('Travel Vacation', 1),
+              _chip('Project Launch', 2),
+              _chip('Birthday', 3),
             ],
           ),
           const SizedBox(height: 16),
@@ -47,7 +47,7 @@ class _Tab2ScreenState extends State<Tab2Screen> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text('Countdowns Record #${i + 201}', style: const TextStyle(fontWeight: FontWeight.bold)),
+                      Text(const ['Tokyo Autumn Expedition', 'Product Version 2.0 Launch', 'Wedding Anniversary Gala', 'Marathon Race Day', 'New Year Celebration 2027'][i % 5], style: const TextStyle(fontWeight: FontWeight.bold)),
                       Text('Stage ${i + 1} • Verified status', style: const TextStyle(fontSize: 12, color: Colors.white60)),
                     ],
                   ),
